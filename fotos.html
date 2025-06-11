@@ -25,7 +25,28 @@
       margin: 0;
       font-size: 2.5rem;
     }
+	h3 {
+  font-size: 1.3rem;
+  color: #b30059;
+  background-color: #ffffffcc;
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px auto;
+  display: inline-block;
+  text-align: center;
+  font-weight: 500;
+  animation: piscar 2s infinite;
+}
 
+@keyframes piscar {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
     .gallery {
       display: flex;
       flex-wrap: wrap;
@@ -84,7 +105,11 @@
   <h1>Feliz Dia dos Namorados 💕</h1>
   <p>Momentos que fazem meu coração bater mais forte</p>
 </header>
+<br>
+<br>
 <h3>Clique na tela</h3>
+<br>
+<br>
 <section class="gallery">
   <div class="photo-card">
     <img src= "foto1.JPG" alt="Nosso momento 1">
