@@ -67,10 +67,19 @@
   </style>
 </head>
 <body>
-  <audio autoplay loop>
-  <source src= "musica.mp3" type="audio/mpeg">
-  Seu navegador não suporta áudio.
+  <audio id="musica" loop>
+  <source src="musica.mp3" type="audio/mpeg">
 </audio>
+
+<script>
+  // Tocar música após interação
+  document.body.addEventListener('click', () => {
+    const musica = document.getElementById('musica');
+    if (musica.paused) {
+      musica.play().catch(e => console.log("Erro ao tocar:", e));
+    }
+  });
+</script>
 <header>
   <h1>Feliz Dia dos Namorados 💕</h1>
   <p>Momentos que fazem meu coração bater mais forte</p>
