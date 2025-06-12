@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dia dos Namorados</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="tela1" id="tela1">
+    <div class="heart">❤️</div>
+    <h1>Feliz Dia dos Namorados!</h1>
+    <p>Que o nosso amor seja sempre doce e eterno.</p>
+    <button onclick="abrirTela(2)">Clique aqui para um carinho 💌</button>
+  </section>
+
+  <section class="tela2" id="tela2">
+      <h1>Estamos juntos há...</h1>
+      <div class="timer" id="timeTogether">
+        Calculando...
+      </div>
+        <h1>E pra todo o sempre</h1>
+
+      <!-- Botão coração com link -->
+        <div class="heart-link" onclick="abrirTela(3)">
+          <svg viewBox="0 0 512 512" fill="#ff5e6c" xmlns="http://www.w3.org/2000/svg">
+            <path d="M471.7,73.7c-54.5-46.4-136-38.3-186.4,13.7L256,116.7l-29.3-29.3C176.3,35.3,94.8,27.3,40.3,73.7
+            C-21.7,131.1-13.1,228.4,43,284.6l192.5,192.5c7.6,7.6,19.8,7.6,27.4,0L469,284.6C525.1,228.4,533.7,131.1,471.7,73.7z"/>
+          </svg>
+          <div class="heart-text">Clique<br>aqui 💌</div>
+        </div>
+  </section>
+
+  <section class="tela3" id="tela3">
+
+    <audio id="musica" loop>
+      <source src="musica.mp3" type="audio/mpeg">
+    </audio>
+
+    <header>
+      <h1>Feliz Dia dos Namorados 💕</h1>
+      <p>Momentos que fazem meu coração bater mais forte</p>
+    </header>
+    <section class="gallery">
+      <div class="photo-card">
+        <img src= "foto1.JPG" alt="Nosso momento 1">
+        <div class="caption">"Cada instante com você é meu favorito."</div>
+      </div>
+      <div class="photo-card">
+        <img src= "foto2.JPG" alt="Nosso momento 2">
+        <div class="caption">"Te amo mais do que ontem e menos do que amanhã."</div>
+      </div>
+      <div class="photo-card">
+        <img src= "foto3.JPG" alt="Nosso momento 3">
+        <div class="caption">"Você é meu lar, meu amor, meu tudo."</div>
+    </div>
+
+      <div class="photo-card">
+        <img src= "foto4.JPG" alt="Nosso momento 3">
+        <div class="caption">"Você é a razão dos meu sorrisos"</div>
+    </div>
+      <div class="photo-card">
+        <img src= "foto5.JPG" alt="Nosso momento 3">
+        <div class="caption">"Que o nossos amor venha se eternizar nele."</div>
+      </div>
+      <div class="photo-card">
+        <img src= "foto6.JPG" alt="Nosso momento 3">
+        <div class="caption">"Cada aventura com você e inesquecivel só por ter você"</div>
+      </div>
+      <div class="photo-card">
+        <img src= "foto7.JPG" alt="Nosso momento 3">
+        <div class="caption">"Que o nossos amor não seja momento, mas sim constante"</div>
+      </div>
+      <div class="photo-card">
+        <img src= "foto8.JPG" alt="Nosso momento 3">
+        <div class="caption">"Você me proporcionou a melhor experiencia dessa vida."</div>
+      </div>
+    </section>
+
+    <footer>
+      Criado com amor para celebrar o nosso Dia dos Namorados 💖
+    </footer>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>	

@@ -1,0 +1,270 @@
+/* Estilos Padrão */
+*{
+    box-sizing: border-box;
+}
+body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: auto;
+    }
+/* Estilo Tela 1 */
+.tela1 {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.tela1 h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px #c94f70;
+}
+
+.tela1 p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px #c94f70;
+}
+
+.tela1  .heart {
+    font-size: 5rem;
+    color: #ff5e6c;
+    animation: pulse 1.5s infinite;
+    margin-bottom: 30px;
+}
+
+@keyframes pulse {
+    0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+    }
+    50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+    }
+}
+
+.tela1 button {
+    background-color: #ff5e6c;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 94, 108, 0.6);
+    transition: background-color 0.3s ease;
+}
+
+.tela1 button:hover {
+    background-color: #ff3b50;
+}
+
+
+/*Estilo Tela 2*/
+body > .tela2 {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #ffc1cc, #ffe4e1);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.tela2 h1 {
+    font-size: 1.3rem;
+    color: #b30059;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tela2 .timer {
+    font-size: 0.8rem;
+    background: linear-gradient(135deg, #ffeff2, #ffefee);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.tela2 .heart-link {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 180px;
+    text-align: center;
+    cursor: pointer;
+    animation: pulse 1.5s infinite ease-in-out;
+    z-index: 2;
+}
+
+.tela2 .heart-link svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.tela2 .heart-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    pointer-events: none;
+    text-shadow: 1px 1px 3px #00000066;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+}
+
+/* Corações flutuantes */
+.tela2 .floating-heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff5e6c;
+    transform: rotate(45deg);
+    animation: float 6s linear infinite;
+    opacity: 0.7;
+}
+
+.tela2 .floating-heart::before,
+.tela2 .floating-heart::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff5e6c;
+    border-radius: 50%;
+}
+
+.tela2 .floating-heart::before {
+    top: -10px;
+    left: 0;
+}
+
+.tela2 .floating-heart::after {
+    top: 0;
+    left: -10px;
+}
+
+@keyframes float {
+    0% {
+    transform: translateY(0) rotate(45deg) scale(1);
+    opacity: 0.7;
+    }
+    100% {
+    transform: translateY(-100vh) rotate(45deg) scale(1.5);
+    opacity: 0;
+    }
+}
+
+.tela2 a {
+    text-decoration: none;
+}
+
+/* Tela 3 */
+
+.tela3 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    font-family: 'Segoe UI', sans-serif;
+    background: #ffe6eb;
+    color: #333;
+    text-align: center;
+}
+header {
+    width: 100%;
+    background: #ff9aa2;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 1.3rem;
+    color: #b30059;
+    background-color: #ffffffcc;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px auto;
+    display: inline-block;
+    text-align: center;
+    font-weight: 500;
+    animation: piscar 2s infinite;
+}
+
+@keyframes piscar {
+0%, 100% {
+opacity: 1;
+}
+50% {
+opacity: 0.4;
+}
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.photo-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.photo-card:hover {
+    transform: scale(1.05);
+}
+
+.photo-card img {
+    width: 100%;
+    display: block;
+}
+
+.caption {
+    padding: 15px;
+    font-size: 1rem;
+    color: #444;
+}
+
+footer {
+    width: 100%;
+    background: #ff9aa2;
+    color: white;
+    padding: 15px;
+    font-size: 0.9rem;
+}
